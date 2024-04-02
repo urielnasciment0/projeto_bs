@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E6E5FF;
+}
+
+.container {
+    width: 50%;
+    height: 30rem;
+    display: flex;
+    box-shadow: 5px 5px 10px #0000004d;
+    border-radius: 20px;
+}
+
+.image {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-image: linear-gradient(to top, #43F355, #45FFBC);
+    border-radius: 20px 0px 0px 20px;
+}
+
+.image img {
+    width: 11rem;
+}
+
+.form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.login-button {
+    display: flex;
+    justify-content: center;
+}
+
+.login-button button {
+    width: 6rem;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #75fd43;
+}
+
+.login-button button:hover {
+    background-color: #63d838;
+}
+
+.login-button button a {
+text-decoration: none;
+font-weight: 500;
+color: #fff;
+}
+
+.input-group {
+    padding: 1rem;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #00000038;
+    
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #a294f3;
+}
+
+@media screen and (max-width: 1330px) {
+    .image img {
+        width: 9rem;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .image {
+        display: none;
+    }
+
+    .form {
+        width: 100%;
+        border-radius: 20px;
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}

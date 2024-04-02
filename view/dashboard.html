@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dashboard - BabyStar</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <style>
+        .side-item.active {
+            background-color: #3cdfa3;
+        }
+
+        .side-item.active a {
+            color: #fff;
+            gap: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header class="container-header">
+        <div class="image">
+            <img src="../imagens/logo.png">
+        </div>
+
+        <div class="user-group">
+            <img src="../imagens/user-icon.png">
+            <i class="fa-solid fa-circle-chevron-down"></i>
+        </div>
+    </header>
+    
+    <div class="container-principal">
+        <nav id="sidebar">
+            <div id="sidebar_content">
+                <ul id="side_itens">
+                    <li class="side-item active">
+                        <a href="dashboard.html">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="item-description">
+                                Início
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="side-item">
+                        <a href="cadastro_bebe.html">
+                            <i class="fa-solid fa-baby"></i>
+                            <span class="item-description">
+                                Cadastrar bebê
+                            </span>
+                        </a>
+                    </li>
+        
+                    <li class="side-item">
+                        <a href="cadastro_medico.html">
+                            <i class="fa-solid fa-user-doctor"></i>
+                            <span class="item-description">
+                                Cadastrar médico
+                            </span>
+                        </a>
+                    </li>
+        
+                    <li class="side-item">
+                        <a href="pesquisa.html">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span class="item-description">
+                                Pesquisar
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>    
+        </nav>
+        <main class="container-main">
+            <div class="container-center">
+                <div class="main-header">
+                    <h1>Seja bem vindo, Mário</h1>
+                    <div class="main-usericon">
+                        <img src="../imagens/user-icon.png">
+                    </div>
+                </div>
+                <div class="options-group">
+                    <div class="option-item">
+                        <a href="pesquisa.html">Últimos bebês registrados</a>
+                    </div>
+                    <div class="option-item">
+                        <a href="pesquisa.html">Últimos médicos registrados</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+</body>
+</html>

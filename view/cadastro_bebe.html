@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Novo bebê - BabyStar</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <style>
+        .side-item.active {
+            background-color: #3cdfa3;
+        }
+
+        .side-item.active a {
+            color: #fff;
+            gap: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header class="container-header">
+        <div class="image">
+            <img src="../imagens/logo.png">
+        </div>
+
+        <div class="user-group">
+            <img src="../imagens/user-icon.png">
+            <i class="fa-solid fa-circle-chevron-down"></i>
+        </div>
+    </header>
+    
+    <div class="container-principal">
+        <nav id="sidebar">
+            <div id="sidebar_content">
+                <ul id="side_itens">
+                    <li class="side-item">
+                        <a href="dashboard.html">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="item-description">
+                                Início
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="side-item active">
+                        <a href="cadastro_bebe.html">
+                            <i class="fa-solid fa-baby"></i>
+                            <span class="item-description">
+                                Cadastrar bebê
+                            </span>
+                        </a>
+                    </li>
+        
+                    <li class="side-item">
+                        <a href="cadastro_medico.html">
+                            <i class="fa-solid fa-user-doctor"></i>
+                            <span class="item-description">
+                                Cadastrar médico
+                            </span>
+                        </a>
+                    </li>
+        
+                    <li class="side-item">
+                        <a href="pesquisa.html">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span class="item-description">
+                                Pesquisar
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>    
+        </nav>
+        <main class="container-main">
+            <div class="container-info">
+                <p class="info-group">
+                    <h1>Novo bebê</h1>
+                    <i class="fa-solid fa-circle-question"></i>
+                </p>
+            </div>
+            <div class="container-center">
+                <div class="form-container">
+                    <form class="form" action="#">
+                        <div class="input-group">
+                            <div class="input-box">
+                                <label for="nome">Nome</label>
+                                <input id="nome" type="text" name="nome" required>
+                            </div>
+        
+                            <div class="input-box">
+                                <label for="sobrenome">Sobrenome</label>
+                                <input id="sobrenome" type="text" name="sobrenome" required>
+                            </div>
+    
+                            <div class="input-box">
+                                <label for="data_nasc">Data nasc</label>
+                                <input class="normalsize" id="data_nasc" type="date" name="data_nasc" required>
+                            </div>
+    
+                            <div class="input-box">
+                                <label for="nome-mae">Nome mãe</label>
+                                <input id="nome_mae" type="text" name="nome-mae" required>
+                            </div>
+    
+                            <div class="input-box">
+                                <label for="nome-pai">Nome pai</label>
+                                <input id="nome_pai" type="text" name="nome-pai" required>
+                            </div>
+    
+                            <div class="input-box">
+                                <label for="telefone">Telefone</label>
+                                <input class="normalsize" id="telefone" type="tel" name="telefone" placeholder="(00)00000-0000" pattern="[0-9]{2}[0-9]{5}-[0-9]{4}" required>
+                            </div>
+    
+                            <div class="input-box">
+                                <label for="medico-resp">Médico responsável</label>
+                                <input id="medico_resp" type="text" name="medico-resp" required>
+                            </div>
+
+                            <div class="savebutton-container">
+                                <div class="save-button">
+                                    <button><a href="dashboard.html">Salvar</a></button>
+                                </div>
+
+                            </div>                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+.container-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-center {
+    width: 70%;
+    margin-top: -150px;
+}
+
+.main-usericon img {
+    width: 150px;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.options-group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.option-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    width: 35%;
+    height: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 7px #00000038
+}
+
+.option-item:hover {
+    background-color: #ebebeb;
+}
+
+.option-item a {
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: #0a0a0a;
+}

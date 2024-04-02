@@ -93,9 +93,11 @@
 
 .table-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    height: 100%;
+    margin-top: 70px;
+    height: 60%;
     width: 100%;
     overflow-x: auto;
 }
@@ -103,7 +105,7 @@
 .table {
     border-collapse: collapse;
     table-layout: fixed;
-
+    box-shadow: 4px 4px 9px #00000038;
 }
 
 
@@ -111,7 +113,7 @@
     font-size: 14px;
     border: 1px solid #000;
     text-align: center;
-    padding: 7px;
+    padding: 5px 10px;
 }
 
 .button-table {
@@ -119,8 +121,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 .button-table i {
@@ -128,13 +130,27 @@
 }
 
 .edit {
-    background-color: #63d838;
+    background-color: #73dd4d;
     border: none;
     border-radius: 5px;
 }
 
+.edit:hover {
+    background-color: #62b345;
+    transition: 0.2s;
+}
+
 .erase {
-    background-color: #f81e1e;
+    background-color: #f15151;
     border: none;
     border-radius: 5px;
+}
+
+.erase:hover {
+    background-color: #f71919;
+    transition: 0.2s;
+}
+
+.td-buttomtable {
+    padding: 0px;
 }

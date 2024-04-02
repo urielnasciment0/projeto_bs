@@ -44,6 +44,7 @@
 
 .option-item:hover {
     background-color: #ebebeb;
+    transition: 0.3s;
 }
 
 .option-item a {

@@ -74,7 +74,7 @@
     padding: 10px;
     white-space: nowrap;
     cursor: pointer;
-    background-color: #6feb42;
+    background-color: #7ff852;
 }
 
 .button-group .button button:hover {
@@ -94,10 +94,9 @@
 .table-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-top: 70px;
-    height: 60%;
+    height: 100%;
     width: 100%;
     overflow-x: auto;
 }
@@ -105,7 +104,8 @@
 .table {
     border-collapse: collapse;
     table-layout: fixed;
-    box-shadow: 4px 4px 9px #00000038;
+    margin-bottom: 30px;
+
 }
 
 
@@ -113,7 +113,7 @@
     font-size: 14px;
     border: 1px solid #000;
     text-align: center;
-    padding: 5px 10px;
+    padding: 7px;
 }
 
 .button-table {
@@ -121,8 +121,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 .button-table i {
@@ -130,27 +130,23 @@
 }
 
 .edit {
-    background-color: #73dd4d;
+    background-color: #82ff55;
     border: none;
     border-radius: 5px;
 }
 
 .edit:hover {
-    background-color: #62b345;
-    transition: 0.2s;
+    background-color: #58ee22;
+    transition: 0.5s;
 }
 
 .erase {
-    background-color: #f15151;
+    background-color: #ff5454;
     border: none;
     border-radius: 5px;
 }
 
 .erase:hover {
-    background-color: #f71919;
-    transition: 0.2s;
-}
-
-.td-buttomtable {
-    padding: 0px;
+    background-color: #e72222;
+    transition: 0.5s;
 }
